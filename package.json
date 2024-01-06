@@ -10,7 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.2"
-  }
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamile-moreira/resolucoes-exercicios-backend-typescript-tipos-dados-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamile-moreira/resolucoes-exercicios-backend-typescript-tipos-dados-2/issues"
+  },
+  "homepage": "https://github.com/jamile-moreira/resolucoes-exercicios-backend-typescript-tipos-dados-2#readme"
 }
