@@ -58,41 +58,41 @@ type Endereco = {
 //   return usuario
 // }
 
-const atualizarUsuario = (cpf: string, dados: Usuario): Usuario => {
-  const bd = lerArquivo() as Usuario[]
-  const usuario = bd.find((usuario) => {
-    return usuario.cpf === cpf
-  })
+// const atualizarUsuario = (cpf: string, dados: Usuario): Usuario => {
+//   const bd = lerArquivo() as Usuario[]
+//   const usuario = bd.find((usuario) => {
+//     return usuario.cpf === cpf
+//   })
 
-  if (!usuario) {
-    throw new Error('Usuário não encontrado')
-  }
+//   if (!usuario) {
+//     throw new Error('Usuário não encontrado')
+//   }
 
-  Object.assign(usuario, dados)
+//   Object.assign(usuario, dados)
 
-  escreverArquivo(bd)
+//   escreverArquivo(bd)
 
-  return dados
-}
+//   return dados
+// }
 
-const excluirUsuario = (cpf: string): Usuario => {
-  const bd = lerArquivo() as Usuario[]
-  const usuario = bd.find((usuario) => {
-    return usuario.cpf === cpf
-  })
+// const excluirUsuario = (cpf: string): Usuario => {
+//   const bd = lerArquivo() as Usuario[]
+//   const usuario = bd.find((usuario) => {
+//     return usuario.cpf === cpf
+//   })
 
-  if (!usuario) {
-    throw new Error('Usuário não encontrado')
-  }
+//   if (!usuario) {
+//     throw new Error('Usuário não encontrado')
+//   }
 
-  const exclusao = bd.filter((usuario) => {
-    return usuario.cpf !== cpf
-  })
+//   const exclusao = bd.filter((usuario) => {
+//     return usuario.cpf !== cpf
+//   })
 
-  escreverArquivo(exclusao)
+//   escreverArquivo(exclusao)
 
-  return usuario
-}
+//   return usuario
+// }
 
 // cadastrarUsuario({
 //     nome: 'Ruli',
