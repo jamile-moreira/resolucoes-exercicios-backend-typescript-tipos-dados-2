@@ -34,29 +34,29 @@ type Endereco = {
 // const listarUsuarios = (filtro?: string): Usuario[] => {
 //   const bd = lerArquivo() as Usuario[]
 
-  const usuarios = bd.filter((usuario) => {
-    if (filtro) {
-      return usuario.profissao === filtro
-    }
+//   const usuarios = bd.filter((usuario) => {
+//     if (filtro) {
+//       return usuario.profissao === filtro
+//     }
 
-    return usuario
-  })
+//     return usuario
+//   })
 
-  return usuarios
-}
+//   return usuarios
+// }
 
-const detalharUsuario = (cpf: string): Usuario => {
-  const bd = lerArquivo() as Usuario[]
-  const usuario = bd.find((usuario) => {
-    return usuario.cpf === cpf
-  })
+// const detalharUsuario = (cpf: string): Usuario => {
+//   const bd = lerArquivo() as Usuario[]
+//   const usuario = bd.find((usuario) => {
+//     return usuario.cpf === cpf
+//   })
 
-  if (!usuario) {
-    throw new Error('Usuário não encontrado')
-  }
+//   if (!usuario) {
+//     throw new Error('Usuário não encontrado')
+//   }
 
-  return usuario
-}
+//   return usuario
+// }
 
 const atualizarUsuario = (cpf: string, dados: Usuario): Usuario => {
   const bd = lerArquivo() as Usuario[]
