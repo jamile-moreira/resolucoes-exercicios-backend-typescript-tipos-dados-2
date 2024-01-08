@@ -107,5 +107,5 @@ type Endereco = {
 //     }
 // })
 
-const bd = listarUsuarios('backend')
-console.log(bd)
+// const bd = listarUsuarios('backend')
+// console.log(bd)
